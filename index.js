@@ -6,12 +6,15 @@ function distanceFromHqInBlocks (blocknNumber) {
         return 42 - blocknNumber
     }
 }
-function distanceFromHqInFeet (blocknNumber){
+function distanceFromHqInFeet (blocknNumber) {
     return distanceFromHqInBlocks (blocknNumber) * 264
 }
 function distanceTravelledInFeet (start, destination) {
     if (start < destination) {
         return (destination - start) * 264
+    }
+    else {
+        return (start - destination) * 264
     }
 }
 function calculatesFarePrice (start, destination) {
